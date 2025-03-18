@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || isOpen
           ? 'bg-white/80 dark:bg-dark-100/80 backdrop-blur-md py-4'
           : 'bg-transparent py-6'
       }`}
