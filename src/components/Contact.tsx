@@ -17,7 +17,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('https://e-portfolio-fpgc.onrender.com', {
+      const response = await fetch('https://e-portfolio-fpgc.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
