@@ -7,13 +7,21 @@ const Message = require('./models/Message');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://ahmedbrini-portfolio.vercel.app', // Allow only your frontend to access
+  methods: ['POST'], // Allow only POST requests
+}));
 app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
+
+// Root route
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
+});
 
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
