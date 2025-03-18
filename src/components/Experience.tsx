@@ -66,7 +66,7 @@ const Experience = () => {
                     <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
                       {experience.company} • {experience.duration}
                     </p>
-                    <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">
                       {experience.description}
                     </p>
                     <div className="flex space-x-4">
