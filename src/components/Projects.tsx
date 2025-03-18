@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: 'EcoRide',
       description: 'EcoRide is a smart electric scooter rental platform that allows users to locate, rent, and ride e-scooters seamlessly. With an interactive map displaying available scooters and built-in GPS navigation, users can easily find the nearest scooter and plan their route efficiently. EcoRide promotes eco-friendly urban mobility. 🚲⚡',
-      image: '../dist/assets/scooter.jpg',
+      image: 'https://png.pngtree.com/background/20241008/original/pngtree-sleek-eco-friendly-electric-kick-scooter-in-a-futuristic-blue-cityscape-picture-image_10803928.jpg',
       githubUrl: 'https://github.com/sinex-cloud'
     },
     {
