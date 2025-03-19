@@ -7,18 +7,21 @@ const Projects = () => {
     {
       title: 'EcoRide',
       description: 'EcoRide is a smart electric scooter rental platform that allows users to locate, rent, and ride e-scooters seamlessly. With an interactive map displaying available scooters and built-in GPS navigation, users can easily find the nearest scooter and plan their route efficiently. EcoRide promotes eco-friendly urban mobility. 🚲⚡',
+      techStack: '#Vue',
       image: 'https://png.pngtree.com/background/20241008/original/pngtree-sleek-eco-friendly-electric-kick-scooter-in-a-futuristic-blue-cityscape-picture-image_10803928.jpg',
-      githubUrl: 'https://github.com/sinex-cloud'
+      githubUrl: 'https://github.com/sinex-cloud/EcoRide'
     },
     {
       title: 'Treasure Hunter',
       description: 'Treasure Hunter is a 2D action-adventure game built with C and SDL2. In the game, players explore different environments, battling mobs and bosses while managing their health represented by hearts.',
+      techStack: '#C #SDL2',
       image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80',
-      githubUrl: 'https://github.com/sinex-cloud'
+      githubUrl: 'https://github.com/sinex-cloud/Treasure-Hunter'
     },
     {
       title: 'Preventis Security',
       description: 'Focused on penetration testing and website security. Conducted vulnerability assessments, analyzed security performance, and identified SEO-related issues to enhance the company\'s web presence.',
+      techStack: '#GTMetrix #Nikto #WhatWaf #SUCURI',
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=80',
       githubUrl: 'https://github.com/sinex-cloud',
       linkedinUrl: 'https://linkedin.com/in/ahmedbrini'
@@ -26,8 +29,9 @@ const Projects = () => {
     {
       title: 'Wimbee Web App',
       description: 'Contributed to website application development using Angular (front-end) and Spring Boot (back-end). Gained experience in API testing and full-stack development.',
+      techStack: '#Angular #SpringBoot Java',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80',
-      githubUrl: 'https://github.com/sinex-cloud',
+      githubUrl: 'https://github.com/sinex-cloud/wimbee-internship',
       linkedinUrl: 'https://linkedin.com/in/ahmedbrini'
     }
   ];
@@ -64,10 +68,11 @@ const Projects = () => {
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">
+                  <p className="text-gray-600 dark:text-gray-300 mb-2 text-justify">
                     {project.description}
                   </p>
-                  <div className="flex space-x-4">
+                  <p className="text-sm font-medium text-primary-600 dark:text-primary-400">{project.techStack}</p>
+                  <div className="flex space-x-4 mt-3">
                     <a
                       href={project.githubUrl}
                       target="_blank"
